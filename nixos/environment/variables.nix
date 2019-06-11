@@ -1,0 +1,4 @@
+{
+  EDITOR = "emacs";
+  VISUAL = "emacs";
+}

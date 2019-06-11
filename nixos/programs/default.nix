@@ -1,0 +1,5 @@
+{
+  programs = {
+    fish = import ./fish;
+  };
+}
