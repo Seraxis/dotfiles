@@ -31,20 +31,30 @@ let
     firefox
     gimp
     mpv
+    networkmanagerapplet
     tor-browser-bundle-bin
     weechat
     
     # Utilities
     acpi
     acpid
+    curl
+    dhcpcd
     feh
     ffmpeg
+    htop
+    lshw
+    lsof
     maim
     man_db
     mkpasswd
     neofetch
+    pamix
     ranger
+    unzip
+    wget
     which
+    zip
   ];
 in
   packages

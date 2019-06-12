@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   imports = [ ./hardware-configuration.nix ];
 
@@ -21,10 +23,34 @@
   # Boot with splash screen
   boot.plymouth.enable = true;
 
-
   # ---- Networking ----
-  networking.hostName = "Bunbunmaru"; # Define your hostname.
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "Bunbunmaru";
+    
+    networkmanager = {
+      enable = true;
+      packages = [ pkgs.networkmanagerapplet ];
+      dns = "none";
+      dhcp = "dhcpcd";
+    };
 
-  networking.dhcpcd.enable = true;
+    dhcpcd.enable = true;
+
+    nameservers = [
+      # OpenDNS IPv4
+      "208.67.222.222"
+      "208.67.220.220"
+    ];
+    
+    # TODO: Ports
+    firewall.allowPing = false;
+  };
+
+  # ---- Hardware ----
+  hardware = {
+    pulseaudio = {
+      enable = true;
+      package = pkgs.pulseaudioFull;
+    };
+  };
 }

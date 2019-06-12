@@ -1,4 +1,4 @@
 {
-  EDITOR = "emacs";
-  VISUAL = "emacs";
+  EDITOR = "emacs -nw";
+  VISUAL = "emacs -nw";
 }

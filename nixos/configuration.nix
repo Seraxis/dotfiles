@@ -23,6 +23,7 @@
     defaultLocale = "en_US.UTF-8";
   };
 
+  # Time zone
   time.timeZone = "Europe/London";
 
   # Allow unfree packages to be built

@@ -1,1 +1,2 @@
-./nixos/machines/self.nix
+nixos/machines/self.nix
+update.sh
