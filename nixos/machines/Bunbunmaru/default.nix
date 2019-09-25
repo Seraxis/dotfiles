@@ -5,7 +5,7 @@
 
   # ---- Boot ----
   # Load vender backlight driver
-  boot.kernelParams = [ "acpi_backlight=vendor" ];
+  boot.kernelParams = [ ''acpi_osi="!Windows 2012"'' ];
 
   # Unencrypt the LUKS partition
   boot.initrd.luks.devices = [

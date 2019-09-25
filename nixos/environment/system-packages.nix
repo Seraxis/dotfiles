@@ -15,7 +15,6 @@ let
     cargo
     clang
     ghc
-    python
     python3
     rustc
 
@@ -27,12 +26,10 @@ let
     st
     
     # Desktop Applications
-    discord
     firefox
     gimp
     mpv
     networkmanagerapplet
-    tor-browser-bundle-bin
     weechat
     
     # Utilities
@@ -54,7 +51,11 @@ let
     unzip
     wget
     which
+    xorg.xev
     zip
+
+    # Fonts
+    source-code-pro
   ];
 in
   packages
